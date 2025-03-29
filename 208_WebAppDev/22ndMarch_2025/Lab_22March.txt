@@ -1,0 +1,41 @@
+
+
+22nd March 2025 (Saturday) Lab on HTML, CSS, JS
+
+
+Problem1: Digital Clock (Real-Time Update) 
+Write a JavaScript program that displays the current time (HH:MM:SS AM/PM) on a webpage. The time should update every second dynamically. Use setInterval(), DOM manipulation, and Date object to create a real-time digital clock.
+
+
+
+Problem2: Word Counter
+Create a text input area where users can type a paragraph and write a JavaScript function that counts the total number of words 
+and characters in real-time. Display the word count and character count dynamically.
+
+
+
+Problem3: Password Strength Checker
+Write a JavaScript program that creates a password strength checker that updates dynamically based on the user's input. 
+You can use the password input field where users can type a password. Display password strength as Weak, Medium, or Strong based on:
+•	Weak: Less than 6 characters.
+•	Medium: 6-10 characters and contains letters & numbers.
+•	Strong: More than 10 characters and contains letters, numbers & special symbols.
+Show real-time strength indicators using a progress bar.
+
+
+
+
+
+
+Problem4: Contact Us Form (Form Validation)
+Create a form with fields: Name, Email, Subject, Message. When the form is submitted, validate:All fields must be filled, Email
+ must contain @ and .(dot) or in a proper format.
+If validation passes, show a thank-you message without refreshing the page.
+
+
+
+
+Problem5: Live Weather App (AJAX + JSON)
+Use AJAX to fetch weather data from a public API (like OpenWeatherMap or a mock JSON file), and display it dynamically. 
+Create a form with a city input. On submit, use AJAX to fetch weather data in JSON format. Display weather info: temperature, condition,
+ humidity etc.
