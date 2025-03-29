@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AJAX Example</title>
+</head>
+<body>
+    <h2>AJAX Example: Fetching Data from Server</h2>
+    
+    <!-- Button that triggers the AJAX request when clicked -->
+    <button onclick="fetchData()">Click to Get Data</button>
+    
+    <!-- This is where the server response will be displayed -->
+    <div id="result"></div>
+
+
+
+
+
+
+    
+    <script>
+        // This function will be called when the button is clicked
+        function fetchData() {
+            // 1. Create a new XMLHttpRequest object (AJAX)
+            var xhr = new XMLHttpRequest();
+
+            // 2. Define what to do when the request state changes
+            xhr.onreadystatechange = function() {
+                // 3. Check if the request is complete (readyState 4) and successful (status 200)
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // 4. Once the response is received, display it in the "result" div
+                    document.getElementById("result").innerHTML = xhr.responseText;
+                }
+            };
+
+            // 5. Configure the request: "GET" method and the URL to request data from
+            xhr.open("GET", "data.txt", true);  // data.txt is a file that we are requesting from the server
+
+            // 6. Send the request to the server
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>

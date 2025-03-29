@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            font-size: 0.9rem;
+        }
+        .success {
+            color: green;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <p class="error" id="nameError"></p>
+        
+        <input type="email" id="email" placeholder="Your Email">
+        <p class="error" id="emailError"></p>
+        
+        <input type="text" id="subject" placeholder="Subject">
+        <p class="error" id="subjectError"></p>
+        
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <p class="error" id="messageError"></p>
+        
+        <button type="submit">Submit</button>
+        <p class="success" id="successMessage"></p>
+    </form>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let isValid = true;
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            document.getElementById("nameError").textContent = name ? "" : "Name is required";
+            document.getElementById("emailError").textContent = email.match(emailPattern) ? "" : "Enter a valid email";
+            document.getElementById("subjectError").textContent = subject ? "" : "Subject is required";
+            document.getElementById("messageError").textContent = message ? "" : "Message is required";
+            
+            if (!name || !email.match(emailPattern) || !subject || !message) {
+                isValid = false;
+            }
+            
+            if (isValid) {
+                document.getElementById("successMessage").textContent = "Thank you! Your message has been sent.";
+                document.getElementById("contactForm").reset();
+            }
+        });
+    </script>
+</body>
+</html>
+
+

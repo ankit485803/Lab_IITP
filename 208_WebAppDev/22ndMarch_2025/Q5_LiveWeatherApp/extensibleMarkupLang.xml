@@ -1,0 +1,22 @@
+
+
+
+<!-- 
+learn how Extensible Markup Language (XML) work 
+
+XML and HTML are markup languages, XML is used for data storage and transportation, 
+while HTML is used for displaying content on web pages. They serve different purposes,
+ with XML being more about structure and data exchange and HTML focusing on presentation and layout in web browsers.
+
+ -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>John Doe</name>
+    <age>25</age>
+    <email>johndoe@example.com</email>
+</person>
+
+
