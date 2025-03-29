@@ -4,7 +4,11 @@
 
 
 Problem1: Digital Clock (Real-Time Update) 
-Write a JavaScript program that displays the current time (HH:MM:SS AM/PM) on a webpage. The time should update every second dynamically. Use setInterval(), DOM manipulation, and Date object to create a real-time digital clock.
+Write a JavaScript program that displays the current time (HH:MM:SS AM/PM) on a webpage. The time should update every second dynamically.
+ Use setInterval(), DOM manipulation, and Date object to create a real-time digital clock.
+
+
+
 
 
 
