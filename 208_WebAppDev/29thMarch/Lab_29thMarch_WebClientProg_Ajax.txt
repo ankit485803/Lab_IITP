@@ -1,0 +1,17 @@
+
+
+
+29th March 2025 (Saturday) Lab on Frontend and web client prog -- JavaScript, jQuery, AJAX
+
+
+Problem1: Student Record Viewer (JSON + Table)  
+Load student data from a local JSON file and display it in a table format using JavaScript. 
+Add a search bar to filter students by name or roll number. Highlight top-performing students (e.g., grade > 
+
+
+Problem2: Country Info Explorer (Dropdown + AJAX + JSON)
+Create a dropdown of countries. When a country is selected - Use AJAX to fetch country data (from an API or local JSON), 
+Display capital, population, currency, flag etc. Add a searchable dropdown using <input> with filtering. Animate the flag display
+ using a CSS transition.
+
+

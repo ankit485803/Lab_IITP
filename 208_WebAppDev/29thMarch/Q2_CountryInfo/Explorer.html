@@ -1,0 +1,128 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .flag, .coat-of-arms {
+            width: 150px;
+            margin-top: 10px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Country Info Explorer</h2>
+    <div class="container">
+        <input type="text" id="search" placeholder="Search for a country..." onkeyup="filterDropdown()">
+        <select id="countryDropdown" onchange="fetchCountryInfo()">
+            <option value="">Select a Country</option>
+        </select>
+
+        <div class="info" id="countryInfo"></div>
+    </div>
+
+    <script>
+        let countryList = [];
+
+        // Load country data from API
+        fetch("https://restcountries.com/v3.1/all")
+            .then(response => response.json())
+            .then(data => {
+                countryList = data.sort((a, b) => a.name.common.localeCompare(b.name.common)); // Sort alphabetically
+                populateDropdown(countryList);
+            })
+            .catch(error => console.error("Error fetching country data:", error));
+
+        // Populate dropdown with country names
+        function populateDropdown(countries) {
+            const dropdown = document.getElementById("countryDropdown");
+            dropdown.innerHTML = '<option value="">Select a Country</option>';
+            countries.forEach(country => {
+                let option = document.createElement("option");
+                option.value = country.cca2;
+                option.textContent = country.name.common;
+                dropdown.appendChild(option);
+            });
+        }
+
+        // Fetch selected country details
+        function fetchCountryInfo() {
+            const selectedCode = document.getElementById("countryDropdown").value;
+            if (!selectedCode) return;
+
+            const country = countryList.find(c => c.cca2 === selectedCode);
+            if (!country) return;
+
+            let languages = country.languages ? Object.values(country.languages).join(", ") : "N/A";
+            let currency = country.currencies ? Object.values(country.currencies)[0].name + " (" + Object.values(country.currencies)[0].symbol + ")" : "N/A";
+            let borders = country.borders ? country.borders.join(", ") : "None";
+            let coatOfArms = country.coatOfArms && country.coatOfArms.png ? `<img src="${country.coatOfArms.png}" alt="Coat of Arms" class="coat-of-arms show">` : "";
+
+            document.getElementById("countryInfo").innerHTML = `
+                <h3>${country.name.official} (${country.name.common})</h3>
+                <p><strong>Capital:</strong> ${country.capital ? country.capital[0] : "N/A"}</p>
+                <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
+                <p><strong>Currency:</strong> ${currency}</p>
+                <p><strong>Languages:</strong> ${languages}</p>
+                <p><strong>Region:</strong> ${country.region} | <strong>Subregion:</strong> ${country.subregion}</p>
+                <p><strong>Demonym:</strong> ${country.demonyms?.eng?.m || "N/A"}</p>
+                <p><strong>Borders:</strong> ${borders}</p>
+                <p><strong>Timezone(s):</strong> ${country.timezones.join(", ")}</p>
+                <p><strong>Google Maps:</strong> <a href="${country.maps.googleMaps}" target="_blank">View on Google Maps</a></p>
+                <p><strong>OpenStreetMap:</strong> <a href="${country.maps.openStreetMaps}" target="_blank">View on OpenStreetMap</a></p>
+                <img src="${country.flags.svg}" alt="Flag" class="flag show">
+                ${coatOfArms}
+            `;
+        }
+
+        // Filter dropdown using input field
+        function filterDropdown() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let filtered = countryList.filter(country => country.name.common.toLowerCase().includes(input));
+            populateDropdown(filtered);
+        }
+    </script>
+
+</body>
+</html>

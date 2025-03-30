@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .top-student {
+            background: #c8e6c9; /* Green for top performers */
+        }
+        input {
+            padding: 8px;
+            margin: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Record Viewer</h2>
+    <input type="text" id="search" placeholder="Search by Name or Roll Number" onkeyup="filterStudents()">
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+
+    <script>
+        let students = [];
+
+        // Load JSON data
+        fetch('student.json')
+            .then(response => response.json())
+            .then(data => {
+                students = data;
+                displayStudents(students);
+            })
+            .catch(error => console.error('Error loading student data:', error));
+
+        // Display students in table
+        function displayStudents(data) {
+            const table = document.getElementById('studentTable');
+            table.innerHTML = "";
+            data.forEach(student => {
+                let row = `<tr class="${student.grade > 90 ? 'top-student' : ''}">
+                            <td>${student.roll}</td>
+                            <td>${student.name}</td>
+                            <td>${student.grade}</td>
+                        </tr>`;
+                table.innerHTML += row;
+            });
+        }
+
+        // Filter function
+        function filterStudents() {
+            let searchQuery = document.getElementById('search').value.toLowerCase();
+            let filteredData = students.filter(student =>
+                student.name.toLowerCase().includes(searchQuery) || 
+                student.roll.toString().includes(searchQuery)
+            );
+            displayStudents(filteredData);
+        }
+    </script>
+
+</body>
+</html>
