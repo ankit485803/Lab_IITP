@@ -1,0 +1,51 @@
+
+/* 5th April 2025 (Saturday) */
+
+
+
+.app {
+    text-align: center;
+    padding: 50px;
+    transition: background-color 0.5s, color 0.5s;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app.light {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .app.dark {
+    background-color: #222;
+    color: #f5f5f5;
+  }
+  
+  .counter-value {
+    font-size: 5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .counter-value:hover {
+    transform: scale(1.2);
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .theme-toggle {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .message {
+    font-size: 1.3rem;
+    margin: 20px;
+  }
+  

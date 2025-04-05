@@ -1,0 +1,15 @@
+
+
+
+
+5th April 2025 (Saturday) regarding React and JSON:
+Backend receive with ChaiAurCode (https://github.com/ankit485803/My_innoV8Hub_ProjPrism/tree/main/02_Profess_BackendMastery_Proj/src)
+
+Aap mostly Backend mai three kam karoge: data handle directly, File, Third party (API)
+
+
+Problem1: Interactive Quiz App
+Create a 5-question multiple-choice quiz. Each question has 4 options. Show only one question at a time. 
+At the end, show the score with a message: "Great Job!" / "Try Again!" based on the score.  Show a progress bar (e.g., Question 2 of 5).  Highlight correct and incorrect answers on selection.
+
+

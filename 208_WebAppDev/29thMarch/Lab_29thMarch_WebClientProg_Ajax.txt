@@ -21,3 +21,9 @@ Display capital, population, currency, flag etc. Add a searchable dropdown using
 Create a Card component that displays - Name, Profile Picture, Profession, Social Media Links (icons or text), Pass this 
 information as props from a parent component. Display 3 different cards on a single page using the same component. Style the cards using 
 inline CSS or CSS modules. Allow props to pass different colors or themes to each card.
+
+
+Problem4: Real-Time Counter with Theme Switch
+Build a simple counter with +, -, and Reset buttons. Add a theme toggle (light/dark) that switches background and text color.
+ Use conditional rendering to show messages like -  “You’ve reached zero!”,  “Keep counting!” etc. Disable the decrement button 
+ if count is already 0. Animate the counter text using CSS transitions.
