@@ -1,0 +1,139 @@
+
+1. safe DELETE
+
+rm -i filename
+rm -ri foldername
+
+
+2. 🧾 VIEW FILE CONTENTS
+------------------------------------
+# View file line by line
+cat fileName.txt
+
+# View file page by page (with scroll)
+less fileName.txt
+
+# View beginning lines
+head -n 10 fileName.txt
+
+# View last lines
+tail -n 10 fileName.txt
+
+
+
+3. 📂 LIST FILES IN DIRECTORY
+------------------------------------
+# List files and folders
+ls
+
+# List all, including hidden files
+ls -a
+
+# List with detailed info (permissions, size, date)
+ls -l
+
+# Combined
+ls -la
+
+
+
+4. 📦 MOVE / RENAME FILE OR FOLDER
+------------------------------------
+# Rename a file
+mv oldName.txt newName.txt
+
+# Move a file to another folder
+mv fileName.txt /path/to/destination/
+
+
+5. 📄 COPY FILE OR FOLDER
+------------------------------------
+# Copy a file
+cp source.txt destination.txt
+
+# Copy folder and contents
+cp -r sourceFolder/ destinationFolder/
+
+
+
+
+
+
+6. 🔍 SEARCH
+------------------------------------
+# Search for a file in current directory
+find . -name "fileName.txt"
+
+# Search text inside a file
+grep "textToFind" fileName.txt
+
+
+7. 📅 DATE & TIME
+------------------------------------
+# Show current date and time
+date
+
+
+------------------------------------
+📊 DISK USAGE
+------------------------------------
+# Show disk usage of current folder (summary)
+du -sh .
+
+
+
+# Show free disk space
+df -h
+
+
+------------------------------------
+ 👤 USER INFO
+------------------------------------
+whoami     # Show current user
+id         # Show user ID and group info
+
+
+
+8. 🔒 PERMISSIONS
+------------------------------------
+# Make script executable
+chmod +x script.sh
+
+# View file permissions
+ls -l
+
+
+
+9. 🧠 SYSTEM INFO
+------------------------------------
+# Show OS and kernel
+uname -a
+
+# Show CPU info
+lscpu
+
+# Show memory info
+free -h
+
+# Show running processes
+top
+
+
+
+    NOTE: my laptop window terminal PS C:\Users\sanja\Desktop> uname -a
+MSYS_NT-10.0-26100 SANJAY 3.4.10-87d57229.x86_64 2024-02-14 20:17 UTC x86_64 Msys
+
+Linux WSL terminal sanja@SANJAY:/mnt/c/Users/sanja/Desktop/Lab$ uname -a
+Linux SANJAY 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+
+
+ans: MSYS_NT-10.0-26100: This indicates the environment — MSYS2 running on Windows NT version 10.0 build 26100.
+MSYS2 is a POSIX compatibility layer on Windows that provides Unix-like tools.
+SANJAY: Your hostname (computer name).
+
+
+10.  grep "pattern" filename
+used to search for a specific string/pattern in files or command output
+
+
