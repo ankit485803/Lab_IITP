@@ -14,7 +14,7 @@
 #      2. No of cpu = 7/8
 #      3. Disk size = 1 TB / 2TB
 
-# UserName = ankit127iitp
+UserName = ankit127iitp
 
 
 # but recommended: MemorySize=4GB, No of cpu=4, diskSize=30GB, depend on laptop config
