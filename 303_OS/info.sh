@@ -1,0 +1,21 @@
+
+
+
+
+# 3rd Sep 2025 (Wednesday - Sem5 IITP 3rd year) Lab conducts on Linux OS 
+
+# Ankit downloaded two software: Oracle Virtual Machine (download in D drive and install in C dive ) File Location  "C:\Program Files\Oracle\VirtualBox\VirtualBox.exe"
+# Linux Ubuntu ("D:\IITP_Lab_Software\Sem5_OS\Ubuntu_Linux\ubuntu-24.04.3-desktop-amd64.iso")
+
+
+
+# and make the one newMachine name = CodeWithHarryVM (outputFolder: "E:\IITP_LabPractical\Sem5_OS\CodeWithHarry_VM_Output")
+# allot 1. MemorySize = 7.68 GB / 8 GB
+#      2. No of cpu = 7/8
+#      3. Disk size = 1 TB / 2TB
+
+# UserName = ankit127iitp
+
+
+# but recommended: MemorySize=4GB, No of cpu=4, diskSize=30GB, depend on laptop config
+
