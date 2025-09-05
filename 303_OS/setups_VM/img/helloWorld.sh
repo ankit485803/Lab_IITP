@@ -25,3 +25,7 @@ chmod +x myscript.sh
 # final run this script file Ankit bhai
 ./myscript.sh
 
+
+
+
+# video link CodeWithHarry Linux VM setup   https://youtu.be/_tCY-c-sPZc?si=1nXLxe73FkvZcnXE

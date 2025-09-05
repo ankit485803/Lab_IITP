@@ -137,3 +137,6 @@ SANJAY: Your hostname (computer name).
 used to search for a specific string/pattern in files or command output
 
 
+
+
+change the default root directory of linux:  cd /mnt/c/Users/sanja/Desktop
