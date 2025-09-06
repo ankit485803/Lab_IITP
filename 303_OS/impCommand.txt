@@ -1,4 +1,13 @@
 
+
+WSL MNT Linux run on the path in this sequence: User@hostname:~$     jo ki yah Linux ka root directory bhi hai
+in my laptop DELL case:  sanja@SANJAY:~$
+to change path: /cd/mnt/c/users/sanja/Desktop
+
+if we want to mouting MNT on d/e drive then:  cd/mnt/d/  
+
+
+
 1. safe DELETE
 
 rm -i filename
@@ -140,3 +149,15 @@ used to search for a specific string/pattern in files or command output
 
 
 change the default root directory of linux:  cd /mnt/c/Users/sanja/Desktop
+
+
+impGitCommand
+
+1. git branch  (kis branch mai hai dekhtne ke liye)
+    git branch -b newBranchName   (create karnke ke liye)   and git branch -d branchName    (jisko delete karna hai)
+    git switch main    (another branch pe jane ke liye)    git checkout main
+
+
+MERGING CODE
+2. git diff branch1name branch2name
+    git merge 
