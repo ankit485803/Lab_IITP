@@ -150,3 +150,16 @@ used to search for a specific string/pattern in files or command output
 
 change the default root directory of linux:  cd /mnt/c/Users/sanja/Desktop
 
+11.  To search a word in a file
+$ grep blue notepad.txt #searches a word blue in notepad.txt file
+
+•	To get a report on the system’s disk space usage
+$ df	# report in % and KBs
+$ df –m	# report in Megabytes
+
+
+•	To check how much space a file or a directory has (File size)
+$ du filename	# check disk space of a file or directory
+$ du ~/filename	# file size in KBs in a given directory
+$ du –sh ~/filename	# File or Folder size of a given directory
+$ du –ah ~/filename	# shows disk space for all files/directory
