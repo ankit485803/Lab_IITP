@@ -6,6 +6,14 @@ to change path: /cd/mnt/c/users/sanja/Desktop
 
 if we want to mouting MNT on d/e drive then:  cd/mnt/d/  
 
+sanja@SANJAY:/mnt/c/Users/sanja/Desktop/GitProj/Lab_IITP$ explorer.exe .
+sanja@SANJAY:/mnt/c/Users/sanja/Desktop/GitProj/Lab_IITP$ code .
+
+✅ Why explorer . Doesn't Work in WSL
+In PowerShell or Command Prompt, explorer . opens the current folder in Windows File Explorer — because explorer.exe is a NATIVE WINDOWS command.
+
+
+
 
 
 1. safe DELETE
