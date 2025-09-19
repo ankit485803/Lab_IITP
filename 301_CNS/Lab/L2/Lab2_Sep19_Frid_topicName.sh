@@ -38,6 +38,8 @@ Gedit is a free and easy-to-use text editor for Linux, especially on systems usi
 
 
 
+Cheksum
+
 
 '
 
