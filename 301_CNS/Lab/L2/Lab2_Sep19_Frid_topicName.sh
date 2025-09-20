@@ -50,8 +50,11 @@ Its a compiler — a program that translates human-readable source code (like C,
 
 
 
-
-
+Q. not completly
+WSL runs on virtualization concepts
+WSL is not a full VM, but it runs Linux in a lightweight virtualized environment.
+Every package you install via apt stays inside WSL.
+It does not “spill over” into Windows programs, except that files in /mnt/c/... are shared between Linux and Windows.
 
 
 
@@ -67,3 +70,38 @@ gcc chat_server.c -o server
 
 gcc chat_client.c -o client
 ./client
+
+
+
+
+sudo apt update
+sudo apt install xdg-utils
+
+sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab/CNS/Server$ open network_ImgSever.jpeg
+sudo apt autoremove
+sudo apt clean
+
+# Check your disk usage:
+df -h
+
+| Filesystem                      | Size         | Used             | Avail                                                  | Mounted on              | Notes                                                                                    |
+| ------------------------------- | ------------ | ---------------- | ------------------------------------------------------ | ----------------------- | ---------------------------------------------------------------------------------------- |
+| `/dev/sdd`                      | 1007G        | 2.5G             | 954G                                                   | `/`                     | This is your main Linux root filesystem in WSL. Only 2.5 GB used → plenty of free space. |
+| `C:\`                           | 367G         | 172G             | 196G                                                   | `/mnt/c`                | Your Windows C: drive. Almost half used.                                                 |
+| `D:\`                           | 33G          | 5.3G             | 28G                                                    | `/mnt/d`                | Windows D: drive.                                                                        |
+| `E:\`                           | 57G          | 637M             | 57G                                                    | `/mnt/e`                | Windows E: drive.                                                                        |
+| Other `none` and `tmpfs` mounts | 2.0G or 392M | very little used | Mostly temporary system memory and WSL internal mounts | Safe, no action needed. |                                                                                          |
+
+
+
+checking disk uses
+sudo du -ah / | sort -rh | head -20
+
+#  List all installed packages
+dpkg -l
+# List manually installed packages only
+apt-mark showmanual
+
+
+# Command	What it does, yaha APT = APT stands for Advanced Package Tool. t’s a command-line tool used to install, update, remove, and manage software packages on Debian-based Linux distributions (like Ubuntu).
+sudo apt update	Updates the package database (lists of available packages and versions)
