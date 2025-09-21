@@ -3,6 +3,32 @@
 
 // Ques. I want to transfer the newtowrk_Img.jpg file transfer fronm client side to server
 
+
+/*
+
+
+✅ Why use "rb"? of img transfer time hmko kam aayega
+
+You're transferring a binary file (like a .jpeg image), not plain text. Using "rb" ensures:
+No newline conversion (which can corrupt binary files on some systems).
+The file is read exactly as-is, byte-for-byte.
+If you used just "r" (text mode), some platforms (like Windows) might alter newline characters (\n ↔ \r\n) during read/write — corrupting binary data like images, PDFs, etc.
+
+
+
+
+
+| Mode   | Meaning                  | When to use                       |
+| ------ | ------------------------ | --------------------------------- |
+| `"r"`  | Read text file           | For `.txt`, `.csv`, etc.          |
+| `"rb"` | Read binary file         | For `.jpeg`, `.png`, `.zip`, etc. |
+| `"w"`  | Write text (overwrite)   | Writes/creates text files         |
+| `"wb"` | Write binary (overwrite) | Writes/creates binary files       |
+
+
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
