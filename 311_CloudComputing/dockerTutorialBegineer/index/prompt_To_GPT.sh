@@ -45,13 +45,31 @@ Ans: git checkout -b docker-journey-devops
        git tag -a v1.0-docker-start -m "Start Docker journey with initial setup and learning files"
        git push origin docker-journey-devops
       git push origin v1.0-docker-start
-      git checkout main
+
+      # Final Merge with Main (Later)
+     git checkout main
+      git pull origin main
+      git merge docker-journey-devops
+      git push origin main
+      
 
 
 
 
-Q4. 
+Q4. How to Keep Only Docker Folder in This Branch (Optional)
+If you want this branch to show only your Docker tutorial folder (clean and isolated), you can remove other folders just in this branch:
 
+# Make sure you're on docker-journey-devops
+git checkout docker-journey-devops
+
+# Remove all other folders except 311_CloudComputing
+git rm -r 202_DBMS 208_WebAppDev 301_CNS 303_OS SketchUp_Ruby
+
+# Commit the cleanup
+git commit -m "Keep only Docker learning folder in docker-journey-devops branch"
+
+# Push changes
+git push
 
 
 
