@@ -72,6 +72,11 @@ git commit -m "Keep only Docker learning folder in docker-journey-devops branch"
 git push
 
 
+Q6. Delete the Old Branch (Locally + Remote)
+git branch -D docker-journey-devops       # delete locally
+git push origin --delete docker-journey-devops   # delete on GitHub
+
+
 
 
 
