@@ -40,8 +40,12 @@ PS C:\Users\sanja\Desktop\GitProj\Lab_IITP>
 
 
 Ans: git checkout -b docker-journey-devops
-      git add 311_CloudComputing
-      
+      git add 311_CloudComputing    yah ya  git add 311_CloudComputing/dockerTutorialBegin  sirf yahi folder hoga push ok ankit bhai
+      git commit -m "Add dockerTutorialBegineer setup for Docker learning and create a separate branch for Docker and tag this also"
+       git tag -a v1.0-docker-start -m "Start Docker journey with initial setup and learning files"
+       git push origin docker-journey-devops
+      git push origin v1.0-docker-start
+      git checkout main
 
 
 
