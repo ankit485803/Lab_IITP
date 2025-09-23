@@ -1,0 +1,46 @@
+
+
+
+
+
+https://github.com/shradha-khapra/docker-testapp
+
+
+
+
+📝 Docker Tutorial - Index
+
+1. What is Docker? Why do we need it?
+
+Docker Images & Containers
+
+Installation of Docker CLI & Desktop
+
+Important Docker Commands
+
+Docker vs VM
+
+Port Mapping & Setting Env Variables
+
+Troubleshooting Containers
+
+Using Containers to build Node Application
+
+Dockerization of Node.js Application (Dockerfile)
+
+Docker Compose
+a. Services
+b. Port Mapping
+c. Env Variables
+d. Volumes
+
+Publishing to DockerHub
+
+Layering in Docker Images
+
+Volume Mounting
+
+Docker Networking
+        a. Default & Custom Networks
+        b. Using custom network for multi-container apps
+        c. Network drivers: Bridge, Host, Null

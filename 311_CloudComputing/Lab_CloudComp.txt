@@ -1,0 +1,13 @@
+
+
+
+22nd Sep 2025 (Monday - Pahli puja Maa Durga Navratri) start the lab of cloud computing self practice
+
+Topics:
+1. virulization concepts
+
+2. Container (ankit Balti), Docker (ek open source platform, shipward jahaj pani wala jis pe bahut sara container), Image (kuch bhi docker mai karo img bolte hai Class)
+         and Kubernates (kaise chala hai shipward ko )
+
+
+3. 

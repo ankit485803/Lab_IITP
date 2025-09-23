@@ -1,0 +1,18 @@
+
+# how yaml file works
+
+🧾 What is .yaml?
+
+.yaml (YAML) stands for YAML Ain’t Markup Language — it's a human-readable data serialization format. It's used for configuration files.
+
+
+
+📦 In Docker context: .yaml is used for Docker Compose
+When you're managing multiple containers (e.g., a web app + a database), you use Docker Compose and define services in a docker-compose.yml or docker-compose.yaml file.
+
+
+📝 YAML multiline comments:
+YAML does not support true multi-line comments like in some programming languages (e.g., /* ... */ in C or """ ... """ in Python).
+But you can still do multi-line comments manually using # at the beginning of each line.
+
+
