@@ -5,6 +5,7 @@
 
 https://github.com/shradha-khapra/docker-testapp
 
+video Lec class link: https://youtu.be/exmSJpJvIPs?si=iUtGfN282CmOoh1v
 
 
 
@@ -41,3 +42,18 @@ https://github.com/shradha-khapra/docker-testapp
 
 done 
 
+i want to make the clone of this repo only docker branch
+https://github.com/ankit485803/Lab_IITP/tree/docker-journey-devops
+
+Clone the repo specifying the branch. You can do a shallow clone (just latest commit) if you don't need the full history, which saves bandwidth and time.
+git clone --branch docker-journey-devops --single-branch https://github.com/ankit485803/Lab_IITP.git
+
+
+
+yaha pe bhai  --branch docker-journey-devops tells Git to check out that branch after clone.
+--single-branch makes Git skip downloading the history for other branches.
+
+
+
+
+yaha se fetch karana hai https://hub.docker.com/
