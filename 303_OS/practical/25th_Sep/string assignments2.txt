@@ -1,0 +1,50 @@
+
+
+
+
+Linux Shell Scripting Assignment
+Topic: Sub-string Handling (Search, Replace, Extract)
+
+Assignments:
+
+1. Search Substring (search_sub.sh)
+Instructions:
+- Ask the user to enter a main string and a substring.
+- Check if the substring is present inside the main string.
+- Print "Found" or "Not Found".
+
+
+
+
+
+2. Replace Substring (replace_sub.sh)
+Instructions:
+- Take a string as input from the user.
+- Ask for a substring to replace and the new substring.
+- Print the string after replacement.
+
+
+
+
+3. Extract Substring by Position (extract_pos.sh)
+Instructions:
+- Read a string from the user.
+- Ask for starting position and length.
+- Print the substring of given length from the position.
+
+
+
+
+4. Remove All Spaces (remove_spaces.sh)
+Instructions:
+- Read a string from the user.
+- Remove all spaces from the string.
+- Print the modified string.
+
+
+
+5. Count Substring Occurrences (count_sub.sh)
+Instructions:
+- Ask for a main string and a substring.
+- Count how many times the substring appears in the main string.
+- Print the count.

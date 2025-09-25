@@ -1,0 +1,54 @@
+
+
+Linux Shell Scripting Assignment
+Topic: String Handling
+
+Objectives:
+- Learn to take string input.
+- Perform basic string operations (length, comparison, concatenation, search, reverse).
+- Practice simple loops and conditions with strings.
+
+Assignments:
+
+1. String Length (strlen.sh)
+Instructions:
+- Ask the user to enter a string.
+- Find the length of the string.
+- Print the length.
+
+
+
+2. String Comparison (strcompare.sh)
+Instructions:
+- Take two strings as input.
+- Check if they are equal or not.
+- Print "Strings are equal" or "Strings are different".
+
+
+
+
+
+3. Concatenate Strings (concat.sh)
+Instructions:
+- Read two strings from the user.
+- Join them into one string.
+- Print the final concatenated string.
+
+
+
+
+
+4. Count Vowels in a String (countvowels.sh)
+Instructions:
+- Read a string from the user.
+- Count the number of vowels (a, e, i, o, u both uppercase and lowercase).
+- Print the total count.
+
+
+
+
+5. Reverse a String (reverse.sh)
+Instructions:
+- Take a string as input.
+- Reverse the string using a loop.
+- Print the reversed string.
