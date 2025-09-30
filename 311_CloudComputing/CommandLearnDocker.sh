@@ -24,3 +24,11 @@ docker system df -v
 # Unused containers, networks, volumes, images delete and  Agar cleanup karna ho (space free)
 docker system prune
 docker system prune -a --volumes
+
+
+# Assign the custom Container NAME while exporting
+docker run --name <your_custom_name> <image_name>
+docker run -it --name kittu_ubuntu ubuntu:rolling    # yaha rolling ek tag hai ho version ke tarh kam kar raha hai ok Ankit Bhai
+
+
+
