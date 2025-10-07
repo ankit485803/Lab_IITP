@@ -31,4 +31,9 @@ docker run --name <your_custom_name> <image_name>
 docker run -it --name kittu_ubuntu ubuntu:rolling    # yaha rolling ek tag hai ho version ke tarh kam kar raha hai ok Ankit Bhai
 
 
+# detach and attach mode to run container
+sanja@IITP:~$ docker run -d -e MYSQL_ROOT_PASSWORD=my-secret mysql
+docker run -d -e MYSQL_ROOT_PASSWORD=my-secret --name kittuDetachSQL mysql:8.4.6
+
+
 
