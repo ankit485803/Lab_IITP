@@ -1,0 +1,4 @@
+
+Hi there, 
+This is Ankit this side to learn the grep -wo to search and count the word in the file in the bash shell scripting.
+
