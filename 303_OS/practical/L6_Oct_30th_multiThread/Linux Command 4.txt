@@ -1,0 +1,73 @@
+
+
+Speeding up computation using multi-threading:
+
+We will consider a program with a long computation, and improve its run time by using multi-threading,
+in order to understand how real systems parallelize and speedup compute-intensive code.
+You are given a program goldbach.c that verifies the Goldbach conjecture up to N=100K numbers (you can try this out for larger values of N as well). The Goldbach conjecture states that every even
+number greater than 2 can be expressed as a sum of two prime numbers. The program given to you does
+the following. It first computes all primes up to N using the “Sieve of Eratosthenes” algorithm, and
+stores this information in a boolean array primes. That is, primes[i] is true if i is prime, and false
+otherwise.
+Now the program begins its task of verifying the Goldbach conjecture. It iterates over all even
+numbers, and counts the number of “Goldbach pairs”, i.e., primes p1 and p2 that add up to the even
+number. It stores this count in an array gb count of size N/2. The value of gb count[i] is the
+number of prime pairs that add up to 2i, for even number 2i. The program computes the time taken for
+this calculation of the counts, by recording timestamps at the start and end of this calculation, and prints
+out the total time elapsed. Most systems should take a few seconds to finish this calculation. Finally, the
+program writes the values of the number of prime pairs to a file output.txt so that we can verify the
+conjecture.
+Now, your job is to speed up this calculation of the number of Goldbach pairs for each even number
+using multithreading. Your code must create 10 threads, assign different, disjoint ranges of numbers to
+these threads (there are many ways to do this; the choice is left to you), so that the threads can calculate
+the number of Goldbach pairs for different even numbers in parallel. You must create threads after
+we have recorded the starting timestamp, and the threads must finish their calculation and join before
+we record the ending timestamp. In this way, we can measure the amount of time taken to compute
+the number of Goldbach pairs in parallel across 10 threads, and compare it with the time taken in the
+single-threaded program.
+The calculation of the number of Goldbach pairs for each even number should be done by exactly one
+thread. You can distribute the work between the threads in any way you see fit. You must only parallelize
+the filling up of the gb count array, and you need not parallelize the calculation of the primes itself
+(that happens before the timer is started). You can move around the code you have to parallelize to a
+separate function, and provide it as the start function for the various threads. You must provide suitable
+arguments to the threads so that each thread knows which range of numbers it must compute on. You
+may need to make some of the data structures like the primes and gb count arrays as global variables
+so that they can be accessed easily by all threads. Think carefully on whether you need locking if the
+different threads access different parts of the array corresponding to different ranges of numbers. Please
+do not tamper with other parts of the code not relevant to you, like the time calculation.
+We expect you to write a parallel version of the same program goldbach.c which runs a few times
+faster than the single-threaded version. A sample execution of both the single threaded code given to
+you, and a multi-threaded version you must write, and shown below. Note that we have to use the “-lm”
+flag when compiling to use the math library, and “-lpthread” flag to use the pthread library. We have also
+given you the output your code must generate in expected-output.txt.
+
+
+Code Execution:
+Single threaded execution:
+$ gcc goldbach.c -lm
+$ ./a.out
+Computed primes upto 100000, count = 9592
+elapsed time: 3448984 microseconds
+$ tail output.txt
+99982 608
+99984 1216
+99986 603
+99988 736
+99990 1855
+99992 638
+99994 651
+99996 1303
+99998 605
+100000 810
+$ diff output.txt expected-output.txt
+$
+Multi-threaded execution:
+$ gcc goldbach.c -lpthread -lm
+$ ./a.out
+Computed primes upto 100000, count = 9592
+elapsed time: 931387 microseconds
+$ diff output.txt expected-output.txt
+$
+Note that in the solution written by us, the multi-threaded version with 10 threads runs about 4 times
+faster, and produces identical output, i.e., correctly computes the number of Goldbach pairs. The exact
+run times and speedup you may see may differ.
