@@ -1,0 +1,48 @@
+
+
+
+1. Producer–Consumer (Bounded Buffer with Mutex + Cond)
+Goal: One producer thread generates integers; one consumer removes them from a ring buffer.
+Hint: Manage head/tail indices with modulo; avoid lost wakeups.
+
+
+
+2. Thread-Safe Logger
+Goal: Multiple worker threads log messages to a single file safely.
+Hint: Prepend [tid=… time=…] message.
+
+
+
+3. Thread Pool (Fixed Size) + Task Queue
+Goal: Implement a basic thread pool with T worker threads and a synchronized task queue.
+Hint: Keep queue generic (function pointer + void*).
+
+
+
+4. Parallel File Grep (Directory Walk)
+Goal: Given a directory and a pattern, spawn a few threads to search files for the pattern and report matches.
+Hint: Limit concurrency to avoid too many open files.
+
+5. Readers–Writers with RW-Lock
+Goal: Simulate a shared key–value cache: many readers, occasional writers.
+Hint: Track timing to show read throughput benefits.
+
+6. Barrier Synchronization (Phased Work)
+Goal: T threads perform 3 phases of work; all must wait at a barrier between phases.
+Hint: Ensure no thread starts phase k+1 early.
+
+7. Deadlock Demo & Fix
+Goal: Show a deadlock scenario with two mutexes locked in opposite order; then fix by imposing a strict lock order.
+Hint: Sleep briefly to increase deadlock likelihood.
+
+8. Parallel Histogram (Cache-Friendly)
+Goal: Build a histogram of byte values (0–255) from a large binary buffer using T threads.
+Hint: Align bins or use uint32_t local[256].
+
+9. Multi-Stage Pipeline (3 Threads)
+Goal: Create a 3-stage pipeline:
+Stage 1: generate integers → Stage 2: square them → Stage 3: sum them.
+
+10. Periodic Sensor & Watchdog
+Goal: One thread samples “sensor” values every 100 ms; another watchdog checks that samples are fresh (no stall > 300 ms).
+Hint: Use clock_gettime(CLOCK_MONOTONIC, …).

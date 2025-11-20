@@ -1,0 +1,55 @@
+
+
+
+1) Hello, Threads!
+Goal: Create N threads; each prints its thread ID and a greeting.
+
+Requirements:
+Use pthread_create, pthread_join.
+Pass the index (0..N-1) as an argument to each thread.
+Hint: Cast int → void* safely (e.g., allocate or use struct).
+
+
+
+
+
+
+2) Sum of Array (Single Mutex)
+Goal: Split an integer array among T threads; each sums its chunk and updates a shared global sum protected by a mutex.
+
+Requirements:
+pthread_mutex_t for the global accumulator.
+Command-line: ./prog <num_threads>.
+Hint: Watch boundary indices if n % T != 0.
+
+
+
+
+3) Parallel Max Finder
+Goal: Find the maximum element of a large array using T threads.
+
+Requirements:
+Each thread computes a local max; main thread reduces locals.
+No shared writes inside the threads (avoid contention).
+Hint: Use a per-thread result array.
+
+
+
+
+4) Pi by Monte Carlo (Intro)
+Goal: Each thread throws K random darts; estimate π = 4·(hits inside circle / total).
+
+Requirements:
+Thread-local hit counts; reduce in main.
+Use different seeds per thread.
+Hint: rand_r or drand48_r for thread-safe RNG.
+
+
+
+
+5) Timed Increment with Sleep
+Goal: Create a worker that increments a counter once per second for S seconds while main waits via pthread_join.
+
+Requirements:
+Use sleep(1) inside thread; print tick numbers.
+Hint: Distinguish main vs worker output.
