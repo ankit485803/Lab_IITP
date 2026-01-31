@@ -3,3 +3,12 @@
 
 29th Jan 2026 (Thursday - sem6 IITP)
 
+https://www.oracle.com/in/java/technologies/downloads/#java8
+https://hadoop.apache.org/releases.html
+https://www.7-zip.org/
+
+
+
+https://www.oracle.com/in/java/technologies/downloads/#java8-windows
+https://docs.oracle.com/javase/8/docs/
+https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
