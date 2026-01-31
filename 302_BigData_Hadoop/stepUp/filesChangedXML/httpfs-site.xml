@@ -19,17 +19,17 @@
 <configuration>
     <property>
         <name>dfs.replication</name>
-        <value> </value>
+        <value>1</value>
     </property>
 
   <property>
-        <name> </name>
-        <value> </value>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///D:/IITP_Lab_Software/302_bigData/apacheHadoop/Extraction/mydata/namenode</value>
     </property>
 
   <property>
-        <name> </name>
-        <value> </value>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///D:/IITP_Lab_Software/302_bigData/apacheHadoop/Extraction/mydata/datanode</value>
     </property>
 
 
