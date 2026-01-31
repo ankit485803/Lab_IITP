@@ -5,7 +5,16 @@ hdfs namenode -format
 start-all.cmd
 set PATH=D:\IITP_Lab_Software\302_bigData\jdk8\Installation\bin;%PATH%    #seeAllRunningServices
 
+http://localhost:8088/cluster  #UI of fileSystem
+http://localhost:9870/dfshealth.html#tab-overview
+http://localhost:9864/datanode.html
 
+hdfs dfs -mkdir /meherData
+echo "BigDataAnalytics302 firstClass by Shashank Rawat bhaiya using Hadoop" > manab.text
+hdfs dfs -put manab.text /meherData   #seeFileCreated
+hdfs dfs -ls /meherData
+
+hdfs dfs -get /meherData/manab.text D:\HadoopFiles\   #apko dowlaod karna parega HDFS se d drive mai and beAlert ankit run mkdir command in d drive okk bhai
 
 
 
