@@ -15,7 +15,7 @@ hdfs dfs -put manab.text /meherData   #seeFileCreated
 hdfs dfs -ls /meherData
 
 hdfs dfs -get /meherData/manab.text D:\HadoopFiles\   #apko dowlaod karna parega HDFS se d drive mai and beAlert ankit run mkdir command in d drive okk bhai
-
+stop-all
 
 
 # Start NameNode
