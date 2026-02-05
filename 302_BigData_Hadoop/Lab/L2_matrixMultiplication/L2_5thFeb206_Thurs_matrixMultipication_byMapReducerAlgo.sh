@@ -1,3 +1,4 @@
+set PATH=D:\IITP_Lab_Software\302_bigData\jdk8\Installation\bin;%PATH% 
 
 
 :'
@@ -9,13 +10,23 @@
 
 matrixMultipication_byMapReducerAlgo
 
+Why MapReduce?
+        Large matrices cannot fit into memory.
+        MapReduce distributes computation across nodes.
+        Mapper emits partial products.
+        Reducer aggregates them to produce final values.
+
+
+
+this
+
 
 
 '
 
 
 # after creating 3 files: matrix.txt, mapper.py and reducer.py
-
+set PATH=D:\IITP_Lab_Software\302_bigData\jdk8\Installation\bin;%PATH% 
 
 # first command
 !chmod +x mapper.py reducer.py
