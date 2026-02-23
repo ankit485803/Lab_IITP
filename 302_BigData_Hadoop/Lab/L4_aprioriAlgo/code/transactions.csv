@@ -1,0 +1,11 @@
+TID,Items
+1,Milk;Bread
+2,Milk;Diaper;Beer;Eggs
+3,Milk;Bread;Diaper;Beer
+4,Bread;Milk;Diaper;Beer
+5,Bread;Milk;Diaper;Coke
+6,Milk;Bread;Butter
+7,Bread;Butter;Jam
+8,Milk;Diaper;Beer
+9,Milk;Bread;Diaper
+10,Bread;Beer
