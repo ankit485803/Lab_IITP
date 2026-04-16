@@ -1,0 +1,78 @@
+
+
+collection.insert_many([
+    {
+        "maker": "Hyundai",
+        "model": "Creta",
+        "fuel_type": "Diesel",
+        "transmission": "Manual",
+        "engine": {
+            "type": "Naturally Aspirated",
+            "cc": 1493,
+            "torque": "250 Nm"
+        },
+        "features": [
+            "Sunroof",
+            "Leather Seats",
+            "Wireless Charging",
+            "Ventilated Seats",
+            "Bluetooth"
+        ],
+        "sunroof": True,
+        "airbags": 6
+    },
+    {
+        "maker": "Maruti Suzuki",
+        "model": "Baleno",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine": {
+            "type": "Naturally Aspirated",
+            "cc": 1197,
+            "torque": "113 Nm"
+        },
+        "features": [
+            "Projector Headlamps",
+            "Apple CarPlay",
+            "ABS"
+        ],
+        "sunroof": False,
+        "airbags": 2
+    },
+    {
+        "maker": "Mahindra",
+        "model": "XUV500",
+        "fuel_type": "Diesel",
+        "transmission": "Manual",
+        "engine": {
+            "type": "Turbocharged",
+            "cc": 2179,
+            "torque": "360 Nm"
+        },
+        "features": [
+            "All-Wheel Drive",
+            "Navigation System",
+            "Cruise Control"
+        ],
+        "sunroof": True,
+        "airbags": 6
+    },
+    {
+        "maker": "Honda",
+        "model": "City",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine": {
+            "type": "Naturally Aspirated",
+            "cc": 1498,
+            "torque": "145 Nm"
+        },
+        "features": [
+            "Keyless Entry",
+            "Auto AC",
+            "Multi-angle Rearview Camera"
+        ],
+        "sunroof": False,
+        "airbags": 4
+    }
+])
