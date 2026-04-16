@@ -1,7 +1,7 @@
 
 :'
 
-9th April 2026 (Thursday) 
+9th April 2026 (Thursday) researchPaperTile: YAFIM: A Parallel Frequent Itemset Mining Algorithm with Spark
 
 Lab 10 on the Apriori algo using spark and YAFIM
 
