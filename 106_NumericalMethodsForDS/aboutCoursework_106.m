@@ -8,6 +8,14 @@ by Prof NK Tomar Sir and Kuldeep Singh Patel
 Labs session on MatLab and its license from institute email id ankit127
 
 
+% In this commit I have created three main folders:
+Nume_Diff: NEWTON forward & Backward diff operators
+Num_Interg: Trapazoidal, comp_trap, simpson 1/3 rule, Gauss Legendre and Hermite
+Linear_Alg: LU, PLU, QR, Cholesky, DoLittle, Gauss-Elimination and Jorden matrix decomposition
+concept of INTERPOLATION in 1D, 2D, 3D for the data sci and analytics.
+
+
+
 
 % diff b/w Octave and MatLab
 MATLAB is a high-performance, proprietary, and commercial tool dominating industry with extensive libraries, while GNU Octave is a free, open-source alternative compatible with most MATLAB syntax. MATLAB excels in specialized toolboxes and speed, 
@@ -17,4 +25,5 @@ MATLAB is a multi-paradigm numerical computing environment and a high-performanc
 Octave is software featuring a high-level programming language, primarily intended for numerical computations. It was developed by John W. Eaton and written in  C, C++, Fortran languages. It comes up with a text interface along with an experimental graphical interface. It is also used for various Machine Learning algorithms for solving various numeric problems. It is similar to MATLAB but performance is slow when compared to MATLAB.
 
 
-% 
+% git tag -a v2.4-MatlabOctaves-NumerMethodForDS -m "CDA106 Numerical Methods for Data Science - MATLAB implementation; 27th Jan 2024 (Saturday - after Repulbic day and before IIIT Guwahati internship & ISRO - NESAC IIRS) winter Sem2 IITP"
+git push --tags
