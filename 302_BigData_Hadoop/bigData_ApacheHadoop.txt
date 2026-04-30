@@ -6,3 +6,13 @@
 
 
 all changedCode & reqExtra files need to download: https://drive.google.com/drive/folders/1fh-2uwgIeCz5b-nT_MzVyfMqNiSpLQjD?usp=drive_link
+
+
+Syllabus
+Chap 1: Introduction to Big Data: Big Data involves massive and complex datasets generated from sources like social media, IoT, etc., characterized by 7 V’s (Volume, Velocity, Variety, Veracity, Valence, Value) along with challenges (storage, scalability, security) and applications in healthcare, finance, and e-commerce.
+Chap 2: Enabling Technologies for Big Data: Covers Big Data stack including storage (–HDFS), processing (MapReduce, Apache Spark), resource management (YARN), query tools like Hive, and Hadoop distribution packages.
+Chap 3: Big Data Computing Technology: Includes Apache Hadoop ecosystem, HDFS, YARN, MapReduce programming model (Map → Shuffle → Reduce) with examples like Word Count and PageRank.
+Chap 4: Big Data Storage Technology: Focuses on CAP Theorem, consistency mod––els (eventual consistency), ACID vs BASE, and NoSQL databases like Apache Cassandra and Apache HBase, along with Apache ZooKeeper and Paxos. Data warehousing solutions (Hadoop, Hive, FLINK, HBase)
+Chap 5: Streaming Big Data Analytics Framework: Covers real-time data processing using streaming systems, pipelines, Spark Streaming, and messaging systems like Apache Kafka.
+Chap 6: Scalable Machine Learning for Big Data: Includes ML on large datasets using Apache Mahout (K-means, Naïve Bayes), Spark MLlib, and introduction to deep learning.
+Chap 7: Large Scale Graph Processing for Big Data: Covers graph processing frameworks like Pregel, Giraph, and Spark GraphX for analyzing large-scale graph data.

@@ -44,3 +44,12 @@ git commit -m "Successfully completed Big Data Final Lab 13 (Sem 6 - BigData302)
 -m "- Computing: Hadoop ecosystem, MapReduce model & examples" \
 -m "- Storage: CAP theorem, ACID vs BASE, Cassandra, HBase, ZooKeeper" \
 -m "- Data Streaming: Apache Kafka, Apache Flink"
+
+
+
+git commit -m "Successfully completed Big Data Final Lab 13 (Sem 6 - BigData302)" `
+-m "- Introduction: 7Vs, challenges, applications" `
+-m "- Enabling Technologies: HDFS, MapReduce, YARN, Hive, Spark" `
+-m "- Computing: Hadoop ecosystem, MapReduce model & examples" `
+-m "- Storage: CAP theorem, ACID vs BASE, Cassandra, HBase, ZooKeeper" `
+-m "- Data Streaming: Apache Kafka, Apache Flink"
