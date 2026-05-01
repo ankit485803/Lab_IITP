@@ -16,3 +16,11 @@ Chap 4: Big Data Storage Technology: Focuses on CAP Theorem, consistency mod–�
 Chap 5: Streaming Big Data Analytics Framework: Covers real-time data processing using streaming systems, pipelines, Spark Streaming, and messaging systems like Apache Kafka.
 Chap 6: Scalable Machine Learning for Big Data: Includes ML on large datasets using Apache Mahout (K-means, Naïve Bayes), Spark MLlib, and introduction to deep learning.
 Chap 7: Large Scale Graph Processing for Big Data: Covers graph processing frameworks like Pregel, Giraph, and Spark GraphX for analyzing large-scale graph data.
+
+
+
+About APACHE
+The Apache Software Foundation: An open-source community that provides legal, financial, and structural support for many software projects, including Hadoop, Spark, and Hive.
+Open-Source Philosophy: Projects under Apache are developed collaboratively and released for free, allowing for massive community contribution.
+Origin of the Name "Apache": The foundation was formed in 1999, growing out of a group of developers working on the Apache HTTP Server. 
+They chose the name partly to represent their collaborative, "patchy" approach to fixing code, and partly as a respect for the Apache Nation.
