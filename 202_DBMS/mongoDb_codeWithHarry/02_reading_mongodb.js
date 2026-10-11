@@ -11,3 +11,5 @@ db.products.find();
 
 //category se find karo using comparison operators
 db.products.find({ price: { $gt: 1000 } });
+
+db.sales.find().pretty();

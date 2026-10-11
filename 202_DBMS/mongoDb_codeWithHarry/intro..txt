@@ -1,3 +1,13 @@
 
 
 11th Oct 2026 (Sunday - Sem7 iitp ongoing)
+
+
+some reference from the Lab 11 of BigData 302 Sem6 hadoop hdfs dfs command Java ecosystem
+link: https://github.com/ankit485803/Lab_IITP/blob/main/302_BigData_Hadoop/Lab/L11_MongoDB/connet%20to%20cluster.png
+
+
+login to mongodb Atlas with gmail ID: ankit127iitp@gmail.com
+
+
+Video link: https://youtu.be/M1dKYQ7GsTg?si=GTQ4mJinfiHoQjCo   (date of upload: 5th Nov 2025)
